@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME WORK</title>
+
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        
+        form {
+            background-color: greenyellow;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100vw;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: yellow;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: yellow;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0 15px 0;
+            border: 2px solid blue;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: gray;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: goldenrod;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: red;
+        }
+
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><label for="Studio Rental Application Form"> APPLICATION FROM:</label></h1>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <form action="">
+        <div class="form-group">
+            <br>
+            <br>
+            <br>
+            <h2><label for="organization">Organization:</label></h2>
+            <input type="text" id="organization" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Your Good Name:</label><br>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="materials">Please provide a brief description of your required materials:</label><br>
+            <input type="text" name="materials" id="materials" required>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="start-date">Start Date:</label><br>
+            <input type="date" name="start-date" id="start-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="end-date">End Date:</label><br>
+            <input type="date" name="end-date" id="end-date" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
