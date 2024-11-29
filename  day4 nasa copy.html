@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Nasa+</title>
+    <style>
+        .nav1{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    height: 14vh;
+}
+.nav2{
+    display: flex;
+    padding: 10px 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    height: 3vh;
+}
+.nav2 ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.nav2 ul li a{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.nav2 ul li a:hover{
+    text-decoration: 3px dotted underline plum;
+
+}
+.navleft, .logo, .navright{
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    padding: 10px 25px;
+    flex: 1;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.navleft{
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    justify-content: flex-start;
+}
+.logo{
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+.navright{
+    padding: 10px 25px;
+    flex: 3;
+    justify-content: flex-end;
+}
+.navright ul{
+    gap: 30px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.navright ul li a{
+    color: white;
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Parkinsans", sans-serif;
+}
+.select1{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.select2{
+    outline: none;
+    border: none;
+    background-color: darkslategrey;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 8px 20px;
+    transition: 0.3s ease;
+    font-size: 13px;
+
+}
+.home{
+    color: white;
+    text-decoration: none;
+}
+.home:hover{
+    text-decoration: 3px  dotted underline plum;
+}
+.hero{
+    background-image: url("https://images.pexels.com/photos/586082/pexels-photo-586082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.herotext{
+    color: white;
+    padding: 200px 25px;
+}
+h3{
+    font-size: 25px;
+}
+h2{
+    font-size: 40px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: lighter;
+}
+h1{
+    font-size: 55px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+}
+p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+.anchor{
+    background-color: red;
+    color: white;
+    font-size: 28px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 6px;
+}
+    </style>
+    <link rel="stylesheet" href="styleNASA.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Parkinsans:wght@300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <nav class="nav1">
+        <div class="navleft">
+            <form action="" method="get">
+                <select name="Explore" id="" class="select1" onchange="this.form.action=this.value; this.form.submit();">
+                    <option value="Explore">Explore</option>
+                    <option value="" disabled>           </option>
+                    <option value="https://www.nasa.gov/nasa-missions/">Missions</option>
+                    <option value="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg">Humans in Space</option>
+                    <option value="https://science.nasa.gov/earth/">Earth & Climate</option>
+                    <option value="https://science.nasa.gov/solar-system/">The Solar System</option>
+                    <option value="https://science.nasa.gov/universe/">TheUniverse</option>
+                    <option value="https://science.nasa.gov/">Sciences</option>
+                    <option value="https://www.nasa.gov/aeronautics/">Aerounatics</option>
+                    <option value="https://www.nasa.gov/technology/">Technology</option>
+                    <option value="https://www.nasa.gov/learning-resources/">Learning Resources</option>
+                    <option value="https://www.nasa.gov/about/">About NASA</option>
+                </select>
+                <input type="search" placeholder="Search...." name="" id="" class="searchbar">
+            </form>
+        </div>
+        <div class="logo">
+            <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="">
+        </div>
+        <div class="navright">
+            <ul>
+                <li>
+                    <form action="">
+                        <select name="" id="" class="select1" onchange="this.form.action=this.value; this.form.submit();">  
+                            <option value="News & Events">News & Events</option>
+                            <option value="" disabled>          </option>
+                            <option value="https://www.nasa.gov/news/all-news/https://www.nasa.gov/news/all-ne+ws/">All NASA News</option>
+                            <option value="https://plus.nasa.gov/series/">Video Series on NASA+</option>
+                            <option value="https://www.nasa.gov/podcasts/">Podcast</option>
+                            <option value="https://www.nasa.gov/nasa-blogs/">Blogs</option>
+                            <option value="https://www.nasa.gov/newsletters/">Newsletters</option>
+                            <option value="https://www.nasa.gov/social-media/">Social Media</option>
+                            <option value="">Media Resources</option>
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </li>
+                <li>
+                    <form action="">
+                        <select name="" id="" class="select1">
+                            <option value="Multimedia">Multimedia</option>
+                            <option value="" disabled>           </option>
+                            <option value="One">One</option>
+                            <option value="Two">Two</option>
+                        </select>
+                    </form>
+                </li>
+                <li class="home"><a href="">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav2">  
+        <div>
+            <ul>
+                <li>
+                    <select name="" id="" class="select2">
+                        <option value="Explore Topics">Explore Topics</option>
+                        <option value="" disabled>           </option>
+                        <option value="">Menu</option>
+                    </select>
+                </li>
+                <li>
+                    <select name="" id="" class="select2">
+                        <option value="Explore Series">Explore Series</option>
+                        <option value="" disabled>           </option>
+                        <option value="One">One</option>
+                    </select>
+
+                </li>
+                <li><a href="">Scheduled Events</a></li>
+                <li><a href="">Search Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="herotext">
+            <h3>NASA</h3>
+            <h2>Rocket Engine</h2>
+            <h1>Fire Place</h1>
+            <p>Look no further than this cozy and relaxing fireplace - complete with four RS-25 <br>
+                rocket engines to fill your hearth with light. (And 8.8 million pounds of thrust to <br>
+                power your party to the moon.)
+            </p>
+            <br><br>
+            <a class="anchor" href="https://youtu.be/zsJpUCWfyPE?si=z8ko4Jx4-hKvRUJ9">Watch</a>
+        </div>
+    </div>
+</body>
+</html>

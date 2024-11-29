@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .parent{
+            display: flex;
+            border: 100vh; 
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .child1:hover{
+            /* background-color: yellowgreen; */
+            transform: scale(1.1);
+            transition: 3s ease-in;
+        }
+        .child1{
+            height: 300px;
+            width: 500px;
+            background-color: aliceblue;
+            padding: 10px 25px;
+        }
+        
+            
+        
+        .child2{
+            height: 300px;
+            width: 500px;
+        }
+        .child2:hover{
+            transform: scale(1.1);
+            transition: 3s ease-in;
+        }
+        
+        img{
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+    <div class="parent">
+        <div class="child1">
+            <h1>The beautiful strory</h1>
+            <hr>
+            <p><h2>Jammu and Kashmir is famous for its natural beauty since time immemorial and has been aptly described as heaven on earth. Each season unveils a different facet of its beauty – from the vibrant colors of spring to the serene white blanket of snow in winter.</h2></p>
+        </div>
+        <div class="child2">
+            <img src="https://images.pexels.com/photos/6984547/pexels-photo-6984547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+        </div>
+    </div>
+</body>
+</html>
