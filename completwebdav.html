@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 5px; 
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+        }
+
+       
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: url('https://images.pexels.com/photos/18417414/pexels-photo-18417414.jpeg?cs=srgb&dl=pexels-olenkabohovyk-18417414.jpg&fm=jpg&_gl=1*1q0wwiw*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzIyODQ5MS45LjEuMTczMzIyODUyMS4wLjAuMA..') no-repeat center center/cover;    */
+            color:none;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header .logo img {
+            width: 200px;
+            height: 200px;
+            animation: fadeIn 3s ease-in-out;
+            display: flex;
+        }
+
+        header nav ul {
+            list-style:none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        header nav ul li:hover {
+            margin-left: 40px;
+        }
+
+        header nav ul li a {
+            color: white; 
+            text-decoration:none; 
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: red;
+        }
+
+        main {
+            background: url('https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?cs=srgb&dl=pexels-pixabay-2150.jpg&fm=jpg&_gl=1*v4mbiw*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA2MzYxOC44LjEuMTczMzA2MzcwNi4wLjAuMA..');   
+            padding: 400px;
+            animation: fadeIn 2s ease-in-out;
+        
+            
+        }
+
+        .hero {
+            color: white;
+            padding: 100px 20px; 
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: yellow;
+        }
+
+        .featured {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px black;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px black;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .card a {
+            display: block;
+            background-color: blue;
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: yellow;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+             
+             <img src="https://video-previews.elements.envatousercontent.com/h264-video-previews/cede6d04-6b34-4c28-a470-6a5a01035d70/55226243.mp4" alt="Missile Animation" class="logo">
+        </div>
+            <nav>
+            <ul>
+                <li><a href="https://www.isro.gov.in/index.html">ISRO</a></li>
+                <li><a href="https://www.nasa.gov/news/all-news/">NASA</a></li>
+                <li><a href="https://science.nasa.gov/universe/">SCIENCE</a></li>
+                <li><a href="https://science.nasa.gov/universe/stories/">NEWS</a></li>
+                <li><a href="https://www.gettyimages.in/photos/missile">GALLERY</a></li>
+                <li><a href="https://www.isro.gov.in/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+         <section class="hero">
+            <h1>Explore the Universe with US</h1>
+            <p>Discover new frontiers in space exploration.</p>
+            <a href="https://viewspace.org/" class="cta-button">Learn More</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Missions</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/8474500/pexels-photo-8474500.jpeg?cs=srgb&dl=pexels-rdne-8474500.jpg&fm=jpg&_gl=1*1amsyao*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTIxNC4wLjAuMA.." alt="Mars Mission">
+                    <h3>Mars Exploration</h3>
+                    <p>Learn more about ISRO's Mars Rover missions and discover new findings from the Red Planet. You can click here to read more information....</p>
+                    <a href="https://en.wikipedia.org/wiki/List_of_missions_to_Mars">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/29570623/pexels-photo-29570623.jpeg?cs=srgb&dl=pexels-victor-moragriega-1390556186-29570623.jpg&fm=jpg&_gl=1*eij3cs*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTM1MC4wLjAuMA.." alt="Moon Mission">
+                    <h3>Moon Mission</h3>
+                    <p>Get the latest updates about the Artemis program aimed at returning humans to the Moon. You can click here to read more information....</p>
+                    <a href="https://en.wikipedia.org/wiki/List_of_missions_to_the_Moon">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/6184014/pexels-photo-6184014.jpeg?cs=srgb&dl=pexels-explorer23-6184014.jpg&fm=jpg&_gl=1*oeagjl*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTcxMC4wLjAuMA.." alt="Explore Beauty of Jharkhand">
+                    <h3>Explore Beauty of Jharkhand</h3>
+                    <p>Jharkhand is home to some of the most beautiful and majestic waterfalls that will leave you mesmerized.</p>
+                    <a href="https://www.ranchiblog.in/beauty-of-jharkhand/">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer> -->
+        <!-- <p>&copy; 2024 PMD | All Rights Reserved to PMD</p> -->
+        <!-- <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p> -->
+    <!-- </footer> -->
+    </body>
+    </html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB Homepage</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 5px;  
+            box-sizing: border-box; 
+            font-family: Arial, sans-serif; 
+            font-size: 30px; 
+        }
+        /* .img1{ */
+            /* width: 10px; */
+            /* height: 20px; */
+        /* } */
+        header {
+            background: url('https://images.pexels.com/photos/29570623/pexels-photo-29570623.jpeg?cs=srgb&dl=pexels-victor-moragriega-1390556186-29570623.jpg&fm=jpg&_gl=1*eij3cs*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTM1MC4wLjAuMA..') no-repeat center center/cover;   
+            color:none;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* header .logo img{ */
+            /* width: 200px; */
+            /* height: 200px; */
+            /* left: 0; */
+           
+           
+            
+        /* } */
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 200px;
+            
+        }
+
+        header nav ul li a {
+            color:yellow; 
+            text-decoration:black; 
+            font-weight: bold;
+            
+           
+        }
+
+        header nav ul li a:hover {
+            color: red;
+            
+        }
+
+        main {
+             background: url('https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?cs=srgb&dl=pexels-pixabay-2150.jpg&fm=jpg&_gl=1*v4mbiw*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA2MzYxOC44LjEuMTczMzA2MzcwNi4wLjAuMA..');  
+            padding: 400px;
+             /* display: flex; */ 
+        }
+
+        .hero {
+            /* background: url('https://images.pexels.com/photos/7108217/pexels-photo-7108217.jpeg?cs=srgb&dl=pexels-maksim-romashkin-7108217.jpg&fm=jpg&_gl=1*1g1ewet*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTEyMS4wLjAuMA..') no-repeat center center/cover;  */
+            color: white;
+            padding: 100px 20px; 
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: yellow;
+        }
+
+        .featured {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px black;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .card a {
+            display: block;
+            background-color: blue;
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .card a:hover {
+            background-color: yellow;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <!-- <img src="https://images.pexels.com/photos/6571000/pexels-photo-6571000.jpeg?cs=srgb&dl=pexels--rahulshah--6571000.jpg&fm=jpg&_gl=1*49dl9n*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMjUxMTY3OS4xLjEuMTczMjUxMjIyMy4wLjAuMA.."> -->
+           
+            
+            
+      </div>
+        <nav>
+            <ul>
+                <li><a href="https://science.nasa.gov/mercury/facts/">MERCURY</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Venus">VENUS</a></li>
+                <li><a href="https://earth.google.com/web/@-0.00000478,-2.00219726,-13993.46014071a,29344312.73983955d,35y,0h,0t,0r/data=CgRCAggBOgMKATBCAggBSg0I____________ARAA">EARTH</a></li>
+                <li><a href="https://www.space.com/47-mars-the-red-planet-fourth-planet-from-the-sun.html">MARS</a></li>
+                <li><a href="https://science.nasa.gov/jupiter/">JUPITER</a></li>
+                <li><a href="https://www.planetary.org/worlds/saturn">SATURN</a></li>
+                <li><a href="https://theskylive.com/uranus-info">URANUS</a></li>
+                <li><a href="https://science.nasa.gov/neptune/neptune-facts/">NEPTUNE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Explore the Universe with US</h1>
+            <p>Discover new frontiers in space exploration.</p>
+            <a href="https://airandspace.si.edu/stories/editorial/exploring-universe-our-collections" class="cta-button">Learn More</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Missions</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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" alt="Galaxy Exploration">
+                    <h3>Galaxy Exploration</h3>
+                    <p>A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems,click here to.....</p>
+                    <a href="https://www.space.com/19915-milky-way-galaxy.html">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?cs=srgb&dl=pexels-philippedonn-1169754.jpg&fm=jpg&_gl=1*1mun90h*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzI0NTkzOS4xMi4xLjE3MzMyNDU5NTYuMC4wLjA." alt="Milky Way">
+                    <h3> Milky Way</h3>
+                    <p>it appears as a milky band of light in the sky when you see it in a really dark area,click here to known about it....</p>
+                    <a href="https://en.wikipedia.org/wiki/Milky_Way">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/73873/star-clusters-rosette-nebula-star-galaxies-73873.jpeg?cs=srgb&dl=pexels-pixabay-73873.jpg&fm=jpg&_gl=1*mecvte*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzI0NTkzOS4xMi4xLjE3MzMyNDYwMjUuMC4wLjA.." alt="Nebula">
+                    <h3>Nebula</h3>
+                    <p>an enormous cloud of dust and gas occupying the space between stars and acting as a nursery for new stars. </p>
+                    <a href="https://www.britannica.com/science/nebula">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main><footer>
+    <p>&copy; 2024 PMD | All Rights Reserved to PMD</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+</body>
+</html>
+   
+</body>
+</html>
+
+
