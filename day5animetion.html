@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 100vh;
+            background-color: red;
+        }
+        .child1{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+        }
+        .child1:hover{
+            transform: translate(1000px) translate(1000px);
+            
+            transition-duration: 3s;
+        }
+         .child2{ 
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+         }
+        .child2:hover{ 
+            transform: translate(-1000px) translate(-1000px);
+            transition-duration: 3s;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">
+        <h1 style="color:white;">catch me if you can</h1></div>
+        <div class="child2">
+        <h2 style="color:black;"> pakkad le bhai</h2></div>
+    </div>
+</body>
+</html>

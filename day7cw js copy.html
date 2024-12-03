@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd or Even</title>
+  
+</head>
+<body>
+  <h1>Odd or Even Checker</h1>
+   <h1> <input type="number" id="numberInput" placeholder="Enter a number"></h1>
+  <button onclick="checkOddEven()">Check</button> 
+  <p id="result"></p>
+
+  <script>
+  let n= prompt("enter thr password");
+  console.log(typeof(n));
+   n = number(password);
+   function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctPassword = "MishraJee";  
+            if (password === correctPassword) {
+              document.getElementById("content").style.display = "block";
+                document.getElementById("passwordForm").style.display = "none";
+                } else {
+              alert("Incorrect password. Please try again.");
+              
+            }}
+            
+      function checkOddEven() {
+      const number = document.getElementById('numberInput').value;
+
+      
+      if (number % 2 === 0) {
+        document.getElementById('result').innerText = `${number} is an Even number.`;
+      } else {
+        document.getElementById('result').innerText = `${number} is an Odd number.`;
+      }
+    }
+    let a=10;
+    let b=20;
+    document.write('the value of a is ${a} the value of b is ${b}')
+    let infiniteNumber = Infinity;
+       console.log("An infinite number:", infiniteNumber);
+
+
+        console.log("Infinity + 1:", infiniteNumber + 1);
+        console.log("Infinity * 2:", infiniteNumber * 2);
+        console.log("Infinity - Infinity:", infiniteNumber - infiniteNumber);
+
+  </script>
+  <div id="passwordForm">
+    <h2>Please enter the password:</h2>
+    <input type="password" id="password" placeholder="Enter password" />
+    <button onclick="checkPassword()">Submit</button>
+</div>
+<div id="content" style="display:none;">
+    <h1>Welcome to the protected page!</h1>
+    <p>This content is only accessible if the correct password is entered.</p>
+</div>
+<!-- <script> -->
+  let infiniteNumber = Infinity;
+       console.log("An infinite number:", infiniteNumber);
+
+
+        console.log("Infinity + 1:", infiniteNumber + 1);
+        console.log("Infinity * 2:", infiniteNumber * 2);
+        console.log("Infinity - Infinity:", infiniteNumber - infiniteNumber);
+
+</script>
+</body>
+</html>

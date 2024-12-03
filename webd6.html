@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEB Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 5px; 
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 35px;
+        }
+        /* .img1{ */
+            /* width: 10px; */
+            /* height: 20px; */
+        /* } */
+        header {
+            background: url('https://images.pexels.com/photos/8474500/pexels-photo-8474500.jpeg?cs=srgb&dl=pexels-rdne-8474500.jpg&fm=jpg&_gl=1*1amsyao*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTIxNC4wLjAuMA..') no-repeat center center/cover;  
+            color:none;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img{
+            width: 200px;
+            height: 200px;
+            left: 0;
+           
+           
+            
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 200px;
+            
+        }
+
+        header nav ul li a {
+            color:white; 
+            text-decoration:black; 
+            font-weight: bold;
+           
+        }
+
+        header nav ul li a:hover {
+            color: red;
+            
+        }
+
+        main {
+             background: url('https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?cs=srgb&dl=pexels-pixabay-2150.jpg&fm=jpg&_gl=1*v4mbiw*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA2MzYxOC44LjEuMTczMzA2MzcwNi4wLjAuMA..');  
+            padding: 400px;
+            /* display: flex; */
+        }
+
+        .hero {
+            /* background: url('https://images.pexels.com/photos/7108217/pexels-photo-7108217.jpeg?cs=srgb&dl=pexels-maksim-romashkin-7108217.jpg&fm=jpg&_gl=1*1g1ewet*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTEyMS4wLjAuMA..') no-repeat center center/cover; */
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: yellow;
+        }
+
+        .featured {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px black;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            padding: 0 20px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .card a {
+            display: block;
+            background-color: blue;
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .card a:hover {
+            background-color: yellow;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <img src="https://images.pexels.com/photos/6571000/pexels-photo-6571000.jpeg?cs=srgb&dl=pexels--rahulshah--6571000.jpg&fm=jpg&_gl=1*49dl9n*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMjUxMTY3OS4xLjEuMTczMjUxMjIyMy4wLjAuMA..">
+           
+            
+            
+      </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MISSIONS</a></li>
+                <li><a href="#">SCIENCE</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Explore the Universe with ISRO</h1>
+            <p>Discover new frontiers in space exploration.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Missions</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/8474500/pexels-photo-8474500.jpeg?cs=srgb&dl=pexels-rdne-8474500.jpg&fm=jpg&_gl=1*1amsyao*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTIxNC4wLjAuMA.." alt="Mars Mission">
+                    <h3>Mars Exploration</h3>
+                    <p>Learn more about ISRO's Mars Rover missions and discover new findings from the Red Planet.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/29570623/pexels-photo-29570623.jpeg?cs=srgb&dl=pexels-victor-moragriega-1390556186-29570623.jpg&fm=jpg&_gl=1*eij3cs*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTM1MC4wLjAuMA.." alt="Moon Mission">
+                    <h3> Moon Mission</h3>
+                    <p>Get the latest updates about the Artemis program aimed at returning humans to the Moon.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/6184014/pexels-photo-6184014.jpeg?cs=srgb&dl=pexels-explorer23-6184014.jpg&fm=jpg&_gl=1*oeagjl*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzA1OTA2Ni42LjEuMTczMzA1OTcxMC4wLjAuMA.." alt="Explore Beauty of Jharkhand">
+                    <h3>Explore Beauty of Jharkhand</h3>
+                    <p>Jharkhand is home to some of the most beautiful and majestic waterfalls that will leave you mesmerized..</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ISRO | All Rights Reserved to ISRO</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+
+
+
